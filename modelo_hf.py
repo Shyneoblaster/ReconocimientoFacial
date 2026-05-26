@@ -86,7 +86,8 @@ def normalizar_iluminacion(imagen_bgr: np.ndarray) -> np.ndarray:
     lab   = cv2.cvtColor(imagen_bgr, cv2.COLOR_BGR2LAB)
     l, a, b = cv2.split(lab)
 
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(4, 4))
+    # Checar clipLimit para pruebas: 1.0, 1.2, 1.5, 2.0
+    clahe = cv2.createCLAHE(clipLimit=1.2, tileGridSize=(4, 4))
     l_eq  = clahe.apply(l)
 
     lab_eq = cv2.merge([l_eq, a, b])

@@ -141,7 +141,7 @@ class MenuPrincipal:
         messagebox.showinfo(
             "Umbral actualizado",
             f"Nuevo umbral: {umbral:.4f}"
-            f"(promedio distancias × 2.5)"
+            f"(promedio distancias × 1.8)"
         )
 
     def run(self):

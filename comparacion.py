@@ -38,7 +38,7 @@ RUTA_UMBRAL = os.path.join(os.path.dirname(__file__), "embeddings", "umbral.pkl"
 #   - dist 0.60–0.85: misma persona, condiciones distintas  ← zona de trabajo
 #   - dist > 1.00: personas diferentes
 UMBRAL_DEFAULT = 0.80   # umbral si no hay umbral calculado o es inválido
-UMBRAL_MIN     = 0.70   # no aceptar umbrales por debajo de esto
+UMBRAL_MIN     = 0.80   # no aceptar umbrales por debajo de esto
 UMBRAL_MAX     = 1.00   # no aceptar umbrales por encima de esto
 
 
