@@ -7,7 +7,7 @@ MODELO UTILIZADO
   gaunernst/vit_small_patch8_gap_112.cosface_ms1mv3
   Librería: timm (Hugging Face)
   Dataset:  MS1MV3 (5.17M imágenes, 93K identidades)
-  Output:   512 dimensiones, métrica: Similitud Coseno
+  Output:   512 dimensiones, métrica: Distancia Euclidiana
 
 INSTALACIÓN
   pip install timm torch torchvision opencv-python openpyxl numpy Pillow huggingface_hub
